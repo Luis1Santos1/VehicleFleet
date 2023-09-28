@@ -12,8 +12,8 @@ using VehicleFleetAPI.Persistence;
 namespace VehicleFleetAPI.Persistence.Migrations
 {
     [DbContext(typeof(VehicleFleetDbContext))]
-    [Migration("20230928164124_InitialCreate")]
-    partial class InitialCreate
+    [Migration("20230928182825_FirstMigration")]
+    partial class FirstMigration
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -49,7 +49,7 @@ namespace VehicleFleetAPI.Persistence.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("MaintenanceHistory");
+                    b.ToTable("MaintenancesHistorys");
                 });
 
             modelBuilder.Entity("VehicleFleetAPI.Models.OwnerModel", b =>
@@ -79,7 +79,7 @@ namespace VehicleFleetAPI.Persistence.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Owner");
+                    b.ToTable("Owners");
                 });
 
             modelBuilder.Entity("VehicleFleetAPI.Models.VehicleInsuranceModel", b =>
@@ -109,7 +109,7 @@ namespace VehicleFleetAPI.Persistence.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("VehicleInsurance");
+                    b.ToTable("VehiclesInsurances");
                 });
 
             modelBuilder.Entity("VehicleFleetAPI.Models.VehicleModel", b =>

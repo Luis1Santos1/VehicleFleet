@@ -9,9 +9,9 @@ namespace VehicleFleetAPI.Persistence
         {
         }
         public DbSet<VehicleModel> Vehicles {  get; set; }
-        public DbSet<OwnerModel> Owner { get; set; }
-        public DbSet<VehicleInsuranceModel> VehicleInsurance { get; set; }
-        public DbSet<MaintenanceHistoryModel> MaintenanceHistory { get; set; }
+        public DbSet<OwnerModel> Owners { get; set; }
+        public DbSet<VehicleInsuranceModel> VehiclesInsurances { get; set; }
+        public DbSet<MaintenanceHistoryModel> MaintenancesHistorys { get; set; }
 
     }
 }

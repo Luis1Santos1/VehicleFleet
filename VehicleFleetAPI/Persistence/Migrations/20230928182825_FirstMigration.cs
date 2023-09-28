@@ -6,13 +6,13 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace VehicleFleetAPI.Persistence.Migrations
 {
     /// <inheritdoc />
-    public partial class InitialCreate : Migration
+    public partial class FirstMigration : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
-                name: "MaintenanceHistory",
+                name: "MaintenancesHistorys",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
@@ -24,11 +24,11 @@ namespace VehicleFleetAPI.Persistence.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_MaintenanceHistory", x => x.Id);
+                    table.PrimaryKey("PK_MaintenancesHistorys", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
-                name: "Owner",
+                name: "Owners",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
@@ -40,24 +40,7 @@ namespace VehicleFleetAPI.Persistence.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Owner", x => x.Id);
-                });
-
-            migrationBuilder.CreateTable(
-                name: "VehicleInsurance",
-                columns: table => new
-                {
-                    Id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    VehicleId = table.Column<int>(type: "int", nullable: false),
-                    InsuranceCompany = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    PolicyNumber = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    StartDate = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    EndDate = table.Column<DateTime>(type: "datetime2", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_VehicleInsurance", x => x.Id);
+                    table.PrimaryKey("PK_Owners", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
@@ -76,22 +59,39 @@ namespace VehicleFleetAPI.Persistence.Migrations
                 {
                     table.PrimaryKey("PK_Vehicles", x => x.Id);
                 });
+
+            migrationBuilder.CreateTable(
+                name: "VehiclesInsurances",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    VehicleId = table.Column<int>(type: "int", nullable: false),
+                    InsuranceCompany = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    PolicyNumber = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    StartDate = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    EndDate = table.Column<DateTime>(type: "datetime2", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_VehiclesInsurances", x => x.Id);
+                });
         }
 
         /// <inheritdoc />
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "MaintenanceHistory");
+                name: "MaintenancesHistorys");
 
             migrationBuilder.DropTable(
-                name: "Owner");
-
-            migrationBuilder.DropTable(
-                name: "VehicleInsurance");
+                name: "Owners");
 
             migrationBuilder.DropTable(
                 name: "Vehicles");
+
+            migrationBuilder.DropTable(
+                name: "VehiclesInsurances");
         }
     }
 }
