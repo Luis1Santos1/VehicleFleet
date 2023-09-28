@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "JTlvoowL9MHHhzEYOA4tRLXXIhF86rfzHPwJcp6oQHQ=",
+  "Source": "VehicleFleetAPI",
+  "BasePath": "_content/VehicleFleetAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
