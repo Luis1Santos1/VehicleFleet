@@ -11855,19 +11855,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\luisr\\.nuget\\packages\\": {}
+    "C:\\Users\\Play\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\luisr\\source\\repos\\VehicleFleet\\VehicleFleetAPI\\VehicleFleetAPI\\VehicleFleetAPI.csproj",
+      "projectUniqueName": "C:\\Users\\Play\\Desktop\\Luis Fernando\\VehicleFleet\\VehicleFleet\\VehicleFleetAPI\\VehicleFleetAPI.csproj",
       "projectName": "VehicleFleetAPI",
-      "projectPath": "C:\\Users\\luisr\\source\\repos\\VehicleFleet\\VehicleFleetAPI\\VehicleFleetAPI\\VehicleFleetAPI.csproj",
-      "packagesPath": "C:\\Users\\luisr\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\luisr\\source\\repos\\VehicleFleet\\VehicleFleetAPI\\VehicleFleetAPI\\obj\\",
+      "projectPath": "C:\\Users\\Play\\Desktop\\Luis Fernando\\VehicleFleet\\VehicleFleet\\VehicleFleetAPI\\VehicleFleetAPI.csproj",
+      "packagesPath": "C:\\Users\\Play\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Play\\Desktop\\Luis Fernando\\VehicleFleet\\VehicleFleet\\VehicleFleetAPI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\luisr\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Play\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -11937,6 +11937,24 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[6.0.16, 6.0.16]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Host.win-x64",
+            "version": "[6.0.16, 6.0.16]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[6.0.16, 6.0.16]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Ref",
+            "version": "[6.0.16, 6.0.16]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"
@@ -11945,7 +11963,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
       }
     }
   }
