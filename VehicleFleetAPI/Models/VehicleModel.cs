@@ -35,5 +35,12 @@ namespace VehicleFleetAPI.Models
         [Required(ErrorMessage = "Color is required.")]
         [StringLength(20, ErrorMessage = "Color cannot exceed 20 characters.")]
         public string? Color { get; set; }
+
+        [ForeignKey("Insurance")]
+        public int? InsuranceId { get; set; }
+
+        [ForeignKey("Owner")]
+        [Required(ErrorMessage = "The Owner Id field is required.")]
+        public int OwnerId { get; set; }
     }
 }

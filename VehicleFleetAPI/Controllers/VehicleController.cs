@@ -48,11 +48,24 @@ namespace VehicleFleetAPI.Controllers
         [HttpPost]
         public async Task<IActionResult> PostVehicle(VehicleModel vehicle)
         {
+            var existingOwner = await _context.Owners.FindAsync(vehicle.OwnerId);
+
+            if(existingOwner == null)
+            {
+                return BadRequest("Owner with the specified OwnerId does not exist.");
+            }
+            
+            if (existingOwner.Vehicles == null)
+            {
+                existingOwner.Vehicles = new List<VehicleModel>();
+            }
+
+            existingOwner.Vehicles.Add(vehicle);
+
             await _context.Vehicles.AddAsync(vehicle);
             await _context.SaveChangesAsync();
 
             var resourceUrl = Url.Action("GetVehicleById", new { id = vehicle.Id });
-
 
             return Created(resourceUrl, vehicle);
 

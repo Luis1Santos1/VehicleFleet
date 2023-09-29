@@ -26,7 +26,9 @@ namespace VehicleFleetAPI.Models
 
         [Display(Name = "Phone")]
         [Required(ErrorMessage = "The Phone field is required.")]
-        [RegularExpression(@"^\d{11}$", ErrorMessage = "Phone number must be 10 digits.")]
+        [RegularExpression(@"^\d{11}$", ErrorMessage = "Phone number must be 11 digits.")]
         public string? Phone { get; set; }
+
+        public ICollection<VehicleModel>? Vehicles { get; set; }
     }
 }

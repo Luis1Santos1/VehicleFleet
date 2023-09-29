@@ -12,6 +12,7 @@ namespace VehicleFleetAPI.Models
         public int Id { get; set; }
 
         [Display(Name = "Vehicle Id")]
+        [Required(ErrorMessage = "The Vehicle Id field is required.")]
         public int VehicleId { get; set; }
 
         [Display(Name = "Insurance Company")]

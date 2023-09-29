@@ -122,6 +122,9 @@ namespace VehicleFleetAPI.Persistence.Migrations
                         .HasMaxLength(20)
                         .HasColumnType("nvarchar(20)");
 
+                    b.Property<int?>("InsuranceId")
+                        .HasColumnType("int");
+
                     b.Property<string>("LicensePlate")
                         .IsRequired()
                         .HasMaxLength(10)
@@ -140,9 +143,29 @@ namespace VehicleFleetAPI.Persistence.Migrations
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)");
 
+                    b.Property<int>("OwnerId")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("OwnerModelId")
+                        .HasColumnType("int");
+
                     b.HasKey("Id");
 
+                    b.HasIndex("OwnerModelId");
+
                     b.ToTable("Vehicles");
+                });
+
+            modelBuilder.Entity("VehicleFleetAPI.Models.VehicleModel", b =>
+                {
+                    b.HasOne("VehicleFleetAPI.Models.OwnerModel", null)
+                        .WithMany("Vehicles")
+                        .HasForeignKey("OwnerModelId");
+                });
+
+            modelBuilder.Entity("VehicleFleetAPI.Models.OwnerModel", b =>
+                {
+                    b.Navigation("Vehicles");
                 });
 #pragma warning restore 612, 618
         }

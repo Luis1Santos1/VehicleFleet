@@ -24,7 +24,7 @@ namespace VehicleFleetAPI.Controllers
         [HttpGet]
         public async Task<IActionResult> GetAllOwners()
         {
-            var owners = await _context.Owners.ToListAsync();
+            var owners = await _context.Owners.Include(o => o.Vehicles).ToListAsync();
             return Ok(owners);
         }
 
@@ -36,7 +36,7 @@ namespace VehicleFleetAPI.Controllers
                 return NotFound();
             }
 
-            var owner = await _context.Owners.FirstOrDefaultAsync(x => x.Id == id);
+            var owner = await _context.Owners.Include(o => o.Vehicles).FirstOrDefaultAsync(x => x.Id == id);
 
             if (owner != null)
             {
@@ -44,6 +44,21 @@ namespace VehicleFleetAPI.Controllers
             }
             return NotFound("Owner Not Found");
         }
+
+        [HttpGet("{id}/vehicles")]
+        public async Task<IActionResult> GetVehiclesByOwnerId(int id)
+        {
+            var owner = await _context.Owners.Include(o => o.Vehicles).FirstOrDefaultAsync(x => x.Id == id);
+
+            if (owner == null)
+            {
+                return NotFound("Owner Not Found");
+            }
+
+            var vehicles = owner.Vehicles.ToList();
+            return Ok(vehicles);
+        }
+
 
         [HttpPost]
         public async Task<IActionResult> PostOwner(OwnerModel owner)

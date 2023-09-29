@@ -48,7 +48,20 @@ namespace VehicleFleetAPI.Controllers
         [HttpPost]
         public async Task<IActionResult> PostVehicleInsurance(VehicleInsuranceModel vehicleInsurance)
         {
+            var existingVehicle = await _context.Vehicles.FindAsync(vehicleInsurance.VehicleId);
+
+            if (existingVehicle == null)
+            {
+                return BadRequest("Vehicle with the specified VehicleId does not exist.");
+            }
+
             await _context.VehiclesInsurances.AddAsync(vehicleInsurance);
+            await _context.SaveChangesAsync();
+
+            int insuranceId = vehicleInsurance.Id;
+
+            existingVehicle.InsuranceId = insuranceId;
+
             await _context.SaveChangesAsync();
 
             var resourceUrl = Url.Action("GetVehicleInsuranceById", new { id = vehicleInsurance.Id });

@@ -44,23 +44,6 @@ namespace VehicleFleetAPI.Persistence.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "Vehicles",
-                columns: table => new
-                {
-                    Id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    Make = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false),
-                    Model = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false),
-                    ManufacturingYear = table.Column<int>(type: "int", nullable: false),
-                    LicensePlate = table.Column<string>(type: "nvarchar(10)", maxLength: 10, nullable: false),
-                    Color = table.Column<string>(type: "nvarchar(20)", maxLength: 20, nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_Vehicles", x => x.Id);
-                });
-
-            migrationBuilder.CreateTable(
                 name: "VehiclesInsurances",
                 columns: table => new
                 {
@@ -76,6 +59,36 @@ namespace VehicleFleetAPI.Persistence.Migrations
                 {
                     table.PrimaryKey("PK_VehiclesInsurances", x => x.Id);
                 });
+
+            migrationBuilder.CreateTable(
+                name: "Vehicles",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Make = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false),
+                    Model = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false),
+                    ManufacturingYear = table.Column<int>(type: "int", nullable: false),
+                    LicensePlate = table.Column<string>(type: "nvarchar(10)", maxLength: 10, nullable: false),
+                    Color = table.Column<string>(type: "nvarchar(20)", maxLength: 20, nullable: false),
+                    InsuranceId = table.Column<int>(type: "int", nullable: true),
+                    OwnerId = table.Column<int>(type: "int", nullable: false),
+                    OwnerModelId = table.Column<int>(type: "int", nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Vehicles", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_Vehicles_Owners_OwnerModelId",
+                        column: x => x.OwnerModelId,
+                        principalTable: "Owners",
+                        principalColumn: "Id");
+                });
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Vehicles_OwnerModelId",
+                table: "Vehicles",
+                column: "OwnerModelId");
         }
 
         /// <inheritdoc />
@@ -85,13 +98,13 @@ namespace VehicleFleetAPI.Persistence.Migrations
                 name: "MaintenancesHistorys");
 
             migrationBuilder.DropTable(
-                name: "Owners");
-
-            migrationBuilder.DropTable(
                 name: "Vehicles");
 
             migrationBuilder.DropTable(
                 name: "VehiclesInsurances");
+
+            migrationBuilder.DropTable(
+                name: "Owners");
         }
     }
 }

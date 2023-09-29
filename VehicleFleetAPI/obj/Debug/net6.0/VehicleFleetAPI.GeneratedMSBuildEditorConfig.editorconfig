@@ -9,73 +9,93 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = VehicleFleetAPI
 build_property.RootNamespace = VehicleFleetAPI
-build_property.ProjectDir = C:\Users\Play\Desktop\Luis Fernando\VehicleFleet\VehicleFleet\VehicleFleetAPI\
+build_property.ProjectDir = C:\Users\luisr\source\repos\VehicleFleet\VehicleFleetAPI\VehicleFleetAPI\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Play\Desktop\Luis Fernando\VehicleFleet\VehicleFleet\VehicleFleetAPI
+build_property.MSBuildProjectDirectory = C:\Users\luisr\source\repos\VehicleFleet\VehicleFleetAPI\VehicleFleetAPI
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Play/Desktop/Luis Fernando/VehicleFleet/VehicleFleet/VehicleFleetAPI/Views/OwnerModels/Create.cshtml]
+[C:/Users/luisr/source/repos/VehicleFleet/VehicleFleetAPI/VehicleFleetAPI/Views/MaintenanceHistory/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFpbnRlbmFuY2VIaXN0b3J5XENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/luisr/source/repos/VehicleFleet/VehicleFleetAPI/VehicleFleetAPI/Views/MaintenanceHistory/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFpbnRlbmFuY2VIaXN0b3J5XERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/luisr/source/repos/VehicleFleet/VehicleFleetAPI/VehicleFleetAPI/Views/MaintenanceHistory/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFpbnRlbmFuY2VIaXN0b3J5XERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/luisr/source/repos/VehicleFleet/VehicleFleetAPI/VehicleFleetAPI/Views/MaintenanceHistory/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFpbnRlbmFuY2VIaXN0b3J5XEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/luisr/source/repos/VehicleFleet/VehicleFleetAPI/VehicleFleetAPI/Views/MaintenanceHistory/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFpbnRlbmFuY2VIaXN0b3J5XEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/luisr/source/repos/VehicleFleet/VehicleFleetAPI/VehicleFleetAPI/Views/OwnerModels/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3duZXJNb2RlbHNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Play/Desktop/Luis Fernando/VehicleFleet/VehicleFleet/VehicleFleetAPI/Views/OwnerModels/Delete.cshtml]
+[C:/Users/luisr/source/repos/VehicleFleet/VehicleFleetAPI/VehicleFleetAPI/Views/OwnerModels/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3duZXJNb2RlbHNcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Play/Desktop/Luis Fernando/VehicleFleet/VehicleFleet/VehicleFleetAPI/Views/OwnerModels/Details.cshtml]
+[C:/Users/luisr/source/repos/VehicleFleet/VehicleFleetAPI/VehicleFleetAPI/Views/OwnerModels/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3duZXJNb2RlbHNcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Play/Desktop/Luis Fernando/VehicleFleet/VehicleFleet/VehicleFleetAPI/Views/OwnerModels/Edit.cshtml]
+[C:/Users/luisr/source/repos/VehicleFleet/VehicleFleetAPI/VehicleFleetAPI/Views/OwnerModels/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3duZXJNb2RlbHNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Play/Desktop/Luis Fernando/VehicleFleet/VehicleFleet/VehicleFleetAPI/Views/OwnerModels/Index.cshtml]
+[C:/Users/luisr/source/repos/VehicleFleet/VehicleFleetAPI/VehicleFleetAPI/Views/OwnerModels/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3duZXJNb2RlbHNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Play/Desktop/Luis Fernando/VehicleFleet/VehicleFleet/VehicleFleetAPI/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/luisr/source/repos/VehicleFleet/VehicleFleetAPI/VehicleFleetAPI/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Play/Desktop/Luis Fernando/VehicleFleet/VehicleFleet/VehicleFleetAPI/Views/VehicleInsurance/Create.cshtml]
+[C:/Users/luisr/source/repos/VehicleFleet/VehicleFleetAPI/VehicleFleetAPI/Views/VehicleInsurance/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVoaWNsZUluc3VyYW5jZVxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Play/Desktop/Luis Fernando/VehicleFleet/VehicleFleet/VehicleFleetAPI/Views/VehicleInsurance/Delete.cshtml]
+[C:/Users/luisr/source/repos/VehicleFleet/VehicleFleetAPI/VehicleFleetAPI/Views/VehicleInsurance/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVoaWNsZUluc3VyYW5jZVxEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Play/Desktop/Luis Fernando/VehicleFleet/VehicleFleet/VehicleFleetAPI/Views/VehicleInsurance/Details.cshtml]
+[C:/Users/luisr/source/repos/VehicleFleet/VehicleFleetAPI/VehicleFleetAPI/Views/VehicleInsurance/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVoaWNsZUluc3VyYW5jZVxEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Play/Desktop/Luis Fernando/VehicleFleet/VehicleFleet/VehicleFleetAPI/Views/VehicleInsurance/Edit.cshtml]
+[C:/Users/luisr/source/repos/VehicleFleet/VehicleFleetAPI/VehicleFleetAPI/Views/VehicleInsurance/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVoaWNsZUluc3VyYW5jZVxFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Play/Desktop/Luis Fernando/VehicleFleet/VehicleFleet/VehicleFleetAPI/Views/VehicleInsurance/Index.cshtml]
+[C:/Users/luisr/source/repos/VehicleFleet/VehicleFleetAPI/VehicleFleetAPI/Views/VehicleInsurance/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVoaWNsZUluc3VyYW5jZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Play/Desktop/Luis Fernando/VehicleFleet/VehicleFleet/VehicleFleetAPI/Views/Vehicle/Create.cshtml]
+[C:/Users/luisr/source/repos/VehicleFleet/VehicleFleetAPI/VehicleFleetAPI/Views/Vehicle/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVoaWNsZVxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Play/Desktop/Luis Fernando/VehicleFleet/VehicleFleet/VehicleFleetAPI/Views/Vehicle/Delete.cshtml]
+[C:/Users/luisr/source/repos/VehicleFleet/VehicleFleetAPI/VehicleFleetAPI/Views/Vehicle/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVoaWNsZVxEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Play/Desktop/Luis Fernando/VehicleFleet/VehicleFleet/VehicleFleetAPI/Views/Vehicle/Details.cshtml]
+[C:/Users/luisr/source/repos/VehicleFleet/VehicleFleetAPI/VehicleFleetAPI/Views/Vehicle/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVoaWNsZVxEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Play/Desktop/Luis Fernando/VehicleFleet/VehicleFleet/VehicleFleetAPI/Views/Vehicle/Edit.cshtml]
+[C:/Users/luisr/source/repos/VehicleFleet/VehicleFleetAPI/VehicleFleetAPI/Views/Vehicle/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVoaWNsZVxFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Play/Desktop/Luis Fernando/VehicleFleet/VehicleFleet/VehicleFleetAPI/Views/Vehicle/Index.cshtml]
+[C:/Users/luisr/source/repos/VehicleFleet/VehicleFleetAPI/VehicleFleetAPI/Views/Vehicle/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVoaWNsZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
