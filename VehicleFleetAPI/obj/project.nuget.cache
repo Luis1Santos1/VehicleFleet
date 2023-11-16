@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "mZaZZm99ouJl9CJfR3DwuR4raUV/LY0uG2FNPIQ5a87bTOAi+VaJu09hJKGKO6cWIKm5tcuYk/8dMRHonnkmvQ==",
+  "dgSpecHash": "8OYl8aYnzblcokaTjRpQn52O2IrSk6LkZvCmlAz07MVVHCn8j4wi/xJHpKDvV0ksoM4CBAJ8T248n+U9kdtQ0w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\luisr\\source\\repos\\VehicleFleet\\VehicleFleetAPI\\VehicleFleetAPI\\VehicleFleetAPI.csproj",
+  "projectFilePath": "C:\\Users\\luisr\\OneDrive\\Documentos\\02_Arquivos Pessoais\\02_Faculdade\\VehicleFleet\\VehicleFleetAPI\\VehicleFleetAPI\\VehicleFleetAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\luisr\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\luisr\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",
